@@ -395,7 +395,7 @@ const Swipeout = createReactClass({
       }
     };
 
-    var styleContent = [styles.swipeoutContent];
+    var styleContent = [styles.swipeoutContent, this.props.styleContent];
     styleContent.push(styleContentPos.content);
 
     var styleRight = [styles.swipeoutBtns];
