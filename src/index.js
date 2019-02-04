@@ -73,7 +73,7 @@ const SwipeoutBtn = createReactClass({
       }
     ]);
 
-    var styleSwipeoutBtnText = [styles.swipeoutBtnText];
+    var styleSwipeoutBtnText = [styles.swipeoutBtnText, btn.textStyle];
 
     //  apply text color
     if (btn.color) styleSwipeoutBtnText.push([{ color: btn.color }]);
@@ -445,6 +445,7 @@ const Swipeout = createReactClass({
         key={i}
         onPress={() => this._autoClose(btn)}
         text={btn.text}
+        textStyle={btn.textStyle}
         type={btn.type}
         underlayColor={btn.underlayColor}
         width={this.state.btnWidth}
